@@ -8,24 +8,19 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+
 </head>
 <body>
-    <div id="root"></div>
 
-    <div>
-        <input id="nombre" type="text" placeholder="nombre">
-        <input id="edad" type="text" placeholder="edad">
-        <input id="correo" type="text" placeholder="correo">
-        <link rel="stylesheet" href="./css/estilos.css">
-
-        <button class="btn bnt-success" id="boton"> Agregar </button>
-    </div>
 
     <hr size="15px">
     <!--
         ----------------------------------------------------------------
     -->
 
+    
+    
     <div class="section">
             <p>Introduce aqui la IP: </p>
             <input id="IP" type="text" placeholder="0.0.0.0">
@@ -35,23 +30,24 @@
             <br>
             <br>
             <button class="btn btn-primary" id="botones"> Aceptar </button>
-        
+            <br>
+            <p>Clase de Red: </p>
+            <input type="text" name="clase" id="clases"
+        readonly="readonly" class="input_text">
+            <br>
+            <p>Ip en binario: </p>
+            <input type="text" name="Ipb" id="BinarioIp"
+    readonly="readonly" class="input_text">
+    <br>
+    <p>Mascara de red: </p>
+    <input type="text" name="mascara" id="mascarai"
+readonly="readonly" class="input_text">
+
     </div>
 
-    <table class="table">
-        <thead>
-            <th> Subred </th>
-            <th> Rango de subredes </th>
-            <th> Host por subred </th>
-        </thead>
-        <tbody>
-            <tr class="direccion">
-                <td> ---</td>
-                <td>---</td>
-                <td>---</td>
-            </tr>
-        </tbody>
-    </table>
+
+
+    <div id="ruta"></div>
 
     
     <!--<script src = "../dist/main.js"></script>-->
