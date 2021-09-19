@@ -10,7 +10,7 @@
 body, html{
 
   
-    background: url(/fondo.jpg);
+    background: url(fondo.jpg);
     background-repeat: no-repeat;
     background-attachment:local;
 }
